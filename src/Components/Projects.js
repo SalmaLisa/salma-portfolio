@@ -43,9 +43,10 @@ const Projects = () => {
               <img src={project.img} alt="project" />
               </div>
             
-            <div className="px-5 py-5 h-40  bg-base-300 relative">
+            <div className="px-5 py-5 h-48 bg-base-300 relative">
                 <h2 className="card-title">{project.title}</h2>
                 <p className="italic">{project.subTitle}</p>
+                <small className="font-semibold"><span className="font-bold">Used Technology : </span>{project.tech}</small>
               <div className="card-actions justify-start mt-3 absolute bottom-4">
                 <a href={project.liveLink} target="_blank" rel="noreferrer" className="lg:px-5 px-3 py-1 lg:py-2 rounded-lg font-bold  text-white bg-gradient-to-tr from-lime-400 to-lime-700">live Site</a>
                 <a href={project.gitLink} target="_blank" rel="noreferrer" className="lg:px-5 px-3 py-1 lg:py-2 bg-gray-700 text-white rounded-lg ">GitHub</a>
@@ -83,6 +84,7 @@ const Projects = () => {
             <div className="card-body bg-base-300">
                 <h2 className="card-title">{project.title}</h2>
                 <p className="italic">{project.subTitle}</p>
+                <small className="font-semibold"><span className="font-bold">Used Technology : </span>{project.tech}</small>
               <div className="card-actions justify-start mt-3">
                 <a href={project.liveLink} target="_blank" rel="noreferrer" className="px-5 py-2 rounded-lg font-bold  text-white bg-gradient-to-tr from-lime-400 to-lime-700">live Site</a>
                 <a href={project.gitLink} target="_blank" rel="noreferrer" className="px-5 py-2 bg-gray-700 text-white rounded-lg ">GitHub</a>
