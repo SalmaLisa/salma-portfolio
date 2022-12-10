@@ -15,7 +15,7 @@ const Banner = () => {
           <p className=" italic">A passionate <span className="font-bold text-xl">Web Developer</span></p>
           <p className="pt-8 ">
             <span className="text-xl font-semibold">Welcome to my world !</span>{" "}
-            <br /> I am here to develop you desired website. <br />  Your
+            <br /> I am here to develop your desired website. <br />  Your
             satisfaction is my priority.
           </p>
           <p className="py-4"></p>
