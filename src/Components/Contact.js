@@ -11,7 +11,7 @@ const Contact = () => {
     emailjs.sendForm('service_lcyyzo9', 'template_40h5cxw', form.current, 'REFEoPlPTmbAmpd1O')
 			.then((result) => {
 				if (result.status === 200) {
-					toast.success("I got your message. I'll contact you soon. 💌")
+					toast.success("Thanks for your message. Salma will contact you soon.💌")
 					e.target.reset()
 				}
 				
