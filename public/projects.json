@@ -3,7 +3,7 @@
     "id": 1,
     "title": "Budget Cars",
     "subTitle": "A Used Car Selling Website",
-    "tech":"ReactJS, Javascript, MongoDB, NodeJS, Express, REST API, Tailwind",
+    "tech":"ReactJS, Javascript, MongoDB, NodeJS, Express, REST API, Tailwind, JWT, Stripe",
     "img": "https://i.ibb.co/h8L44bH/budget-Car-removebg-preview.png",
     "liveLink": "https://budget-cars-bec96.web.app/",
     "gitLink": "https://github.com/SalmaLisa/budget-car-client"
@@ -12,7 +12,7 @@
     "id": 2,
     "title": "Lara Cripton",
     "subTitle": "Service Review website of a psychologist.",
-    "tech":"ReactJS, Javascript, MongoDB, NodeJS, Express, REST API, Tailwind",
+    "tech":"ReactJS, Javascript, MongoDB, NodeJS, Express, REST API, Tailwind, JWT",
     "img": "https://i.ibb.co/h9fLdtz/lara-cripton-removebg-preview.png",
     "liveLink": "https://lara-cripton.web.app/",
     "gitLink": "https://github.com/SalmaLisa/lara-cripton-client-ass"
@@ -25,5 +25,32 @@
     "img": "https://i.ibb.co/HXRXsQr/learning-Bee-removebg-preview.png",
     "liveLink": "https://learning-bee-client.web.app/",
     "gitLink": "https://github.com/SalmaLisa/learning-bee-client"
+  },
+  {
+    "id": 4,
+    "title": "Quiz Masters",
+    "subTitle": "An Educational Website",
+    "tech":"ReactJS, React router, Javascript, Tailwind",
+    "img": "https://i.ibb.co/16c5Rgn/quiz-removebg-preview.png",
+    "liveLink": "https://visionary-dasik-f9d9d9.netlify.app",
+    "gitLink": "https://github.com/SalmaLisa/Quiz-Masters"
+  },
+  {
+    "id": 5,
+    "title": "BD News",
+    "subTitle": "Online News Paper",
+    "tech":"ReactJS, Javascript, REST API, Tailwind",
+    "img": "https://i.ibb.co/88bHM7D/news-removebg-preview.png",
+    "liveLink": "https://comforting-peony-6ebe6f.netlify.app",
+    "gitLink": "https://github.com/SalmaLisa/dragon-news-portal-client"
+  },
+  {
+    "id": 6,
+    "title": "Penguin Fashion",
+    "subTitle": "Winter Cloth Store",
+    "tech":"HTML, Javascript,Tailwind",
+    "img": "https://i.ibb.co/vvH77Lz/winter-removebg-preview.png",
+    "liveLink": "https://storied-tarsier-9f6c83.netlify.app",
+    "gitLink": "https://github.com/SalmaLisa/penguin-tailwind"
   }
 ]

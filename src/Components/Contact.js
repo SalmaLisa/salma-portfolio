@@ -1,6 +1,25 @@
-import React from 'react';
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
+import { toast } from 'react-hot-toast';
 
 const Contact = () => {
+	const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_lcyyzo9', 'template_40h5cxw', form.current, 'REFEoPlPTmbAmpd1O')
+			.then((result) => {
+				if (result.status === 200) {
+					toast.success("I got your message. I'll contact you soon. 💌")
+					e.target.reset()
+				}
+				
+          console.log(result);
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
   return (
     <div id='contact'>
       <section className="py-6  bg-gradient-to-tr from-lime-200 to-lime-400 text-gray-900">
@@ -31,20 +50,20 @@ const Contact = () => {
 				</p>
 			</div>
 		</div>
-		<form novalidate="" className="flex flex-col py-6 space-y-6 md:py-0 md:px-6 ng-untouched ng-pristine ng-valid">
+		<form  ref={form} onSubmit={sendEmail}  className="flex flex-col py-6 space-y-6 md:py-0 md:px-6 ng-untouched ng-pristine ng-valid">
 			<label className="block">
 				<span className="mb-1">Full name</span>
-				<input type="text" placeholder="Your Name" className="block w-full rounded-md py-3 px-5 focus:outline-none" />
+				<input type="text" name='user_name' placeholder="Your Name" className="block w-full rounded-md py-3 px-5 focus:outline-none" />
 			</label>
 			<label className="block">
 				<span className="mb-1">Email address</span>
-				<input type="email" placeholder="example@gmail.com" className="block w-full rounded-md py-3 px-5 focus:outline-none" />
+				<input type="email" name='user_email' placeholder="example@gmail.com" className="block w-full rounded-md py-3 px-5 focus:outline-none" />
 			</label>
 			<label className="block">
 				<span className="mb-1">Message</span>
-				<textarea rows="3" placeholder='Leave a message' className="block w-full rounded-md px-5 py-3 focus:outline-none bg-gray-100"></textarea>
+				<textarea rows="3" name='message' placeholder='Leave a message' className="block w-full rounded-md px-5 py-3 focus:outline-none bg-gray-100"></textarea>
 			</label>
-			<button type="button" className="self-center text-lg rounded-lg px-12 btn">Submit</button>
+			<input type="submit" value="Submit" className="self-center text-lg rounded-lg px-12 btn"/>
 		</form>
 	</div>
 </section>

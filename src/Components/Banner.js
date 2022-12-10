@@ -10,12 +10,12 @@ const Banner = () => {
           <img src={laptopBg} className=" rounded-lg shadow-2xl" alt="laptop" />
         </div>
         <div className="lg:w-1/2 lg:ml-16 lg:mr-5">
-          <p className="font-semibold">This is Me ,</p>
+          <p className="font-semibold">Hello ! This is Me ,</p>
           <h1 className="text-5xl font-bold text-lime-500">Salma Akter</h1>
-          <p className="py-6">
-            <span className="text-xl font-bold">Welcome to my world !</span>{" "}
-            <br />I am a Web Developer, and I'm very passionate and dedicated to
-            my work. I am committed to develop you desired website. Your
+          <p className=" italic">A passionate <span className="font-bold text-xl">Web Developer</span></p>
+          <p className="pt-8 ">
+            <span className="text-xl font-semibold">Welcome to my world !</span>{" "}
+            <br /> I am here to develop you desired website. <br />  Your
             satisfaction is my priority.
           </p>
           <p className="py-4"></p>

@@ -15,7 +15,7 @@ const Projects = () => {
       .then(res => res.json()
       .then(data=>setProjects(data)))
   },[])
-  console.log(projects);
+  // console.log(projects);
   return (
     <div className=" lg:mx-20 ">
     <div id="projects" className="py-12">
@@ -36,7 +36,7 @@ const Projects = () => {
         className="mySwiper"
       >
         <div>
-          {projects?.map(project=> <SwiperSlide>
+          {projects?.map(project=> <SwiperSlide key={project.id}>
           <div className="card glass ">
             
               <div className="bg-base-300">
@@ -74,7 +74,7 @@ const Projects = () => {
        className="mySwiper"
      >
        <div>
-          {projects?.map(project=> <SwiperSlide>
+          {projects?.map((project)=> <SwiperSlide  key={project.id}>
           <div className="card glass ">
             
               <div className="bg-base-300">
