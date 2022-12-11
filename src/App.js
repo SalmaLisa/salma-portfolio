@@ -1,4 +1,5 @@
 
+import { RouterProvider } from 'react-router-dom';
 import './App.css';
 import About from './Components/About';
 import Banner from './Components/Banner';
@@ -8,18 +9,14 @@ import Nav from './Components/Nav';
 import Projects from './Components/Projects';
 import Services from './Components/Services';
 import Skills from './Components/Skills';
+import { router } from './Routes/Router';
 
 function App() {
   return (
     <div className="max-w-[1400px] mx-auto">
-      <Nav></Nav>
-      <Banner></Banner>
-      <Projects></Projects>
-      <About></About>
-      <Skills></Skills>
-      <Services></Services>
-      <Contact></Contact>
-      <Footer></Footer>
+      <RouterProvider router={router}>
+
+      </RouterProvider>
     </div>
   );
 }
