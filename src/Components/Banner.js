@@ -1,6 +1,7 @@
 import React from "react";
 import laptopBg from "../assets/laptop-bg.png";
 import { HiDownload } from "react-icons/hi";
+import resume from '../assets/Salma Akter - Resume (5).pdf'
 
 const Banner = () => {
   return (
@@ -21,9 +22,7 @@ const Banner = () => {
           <p className="py-4"></p>
           <a href="#contact" className="px-5 py-3 rounded-lg font-bold uppercase text-white bg-gradient-to-tr from-lime-400 to-lime-700">hire me</a>
           <a
-            href="https://drive.google.com/file/d/1M6E6nyHdBBrGzM-eipA8d5M9f3FE3lCj/view?usp=share_link"
-            target="_blank"
-            rel="noreferrer"
+            href={resume} download ='Salma Akter resume.pdf'
             className="btn ml-3"
           >
             Download Resume <HiDownload className="text-xl ml-2"></HiDownload>{" "}
